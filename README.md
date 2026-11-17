@@ -44,6 +44,12 @@ The RF signal enters through the SMA connector and a 50 Ω microstrip feed line.
 <td valign="top">An HP 8648C signal generator sets the frequency and input power, and an Agilent B2901A precision SMU holds the rectenna output at a fixed voltage while measuring the harvested DC power. The efficiency is the ratio of DC output power to RF input power, swept over frequency, input power and load voltage.</td>
 <td valign="top">The complete harvesting chain: the rectenna output feeds an e-peas MPPT power-management board that charges storage capacitors and powers a Sensirion SHT43 sensor node. An oscilloscope, a Keithley 2450 SourceMeter and a multimeter monitor the voltages during operation.</td>
 </tr>
+<tr>
+<td align="center" colspan="2"><a href="Media/rectenna_wireless_powering_setup.jpg"><img src="Media/rectenna_wireless_powering_setup.jpg" width="600" alt="Over-the-air powering of a sensor node with a UHF transmitting antenna and the rectenna"></a><br><b>Over-the-air (wireless) powering test</b></td>
+</tr>
+<tr>
+<td colspan="2" valign="top">The same harvesting chain powered over the air instead of by cable: a UHF panel antenna on a mast transmits, and a ground-plane antenna on the bench feeds the rectenna, the MPPT board and the sensor node. Tape marks on the floor set the transmitter–receiver separation for each measurement point, while the oscilloscope and multimeter monitor the voltages.</td>
+</tr>
 </table>
 
 ## Related publications
