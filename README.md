@@ -1,12 +1,25 @@
 # RF Energy Harvesting (Rectenna)
 
-Rectenna prototypes for RF energy harvesting in the 868 MHz UHF band, developed for battery-free IoT sensor nodes and UHF RFID read-range enhancement. The rectifier uses an L-matching network built from a series capacitor and a high-Q short-circuited microstrip line, followed by a Schottky half-wave rectifier. This repository collects a demo video and labeled photos of the fabricated prototypes and measurement setups.
+Rectenna prototypes for RF energy harvesting in the 868 MHz UHF band, developed for battery-free IoT sensor nodes and UHF RFID read-range enhancement. The rectifier uses an L-matching network built from a series capacitor and a high-Q short-circuited microstrip line, followed by a Schottky half-wave rectifier. This repository collects demo videos, RF energy surveys and labeled photos of the fabricated prototypes and measurement setups.
 
-## Demo video
+## Demo videos
+
+### Powering a sensor node
 
 <table>
 <tr>
 <td align="center" width="100%"><a href="Media/rectenna_sensor_node_demo.mp4"><img src="Media/rectenna_sensor_node_demo.gif" width="480" alt="868 MHz rectenna with an MPPT power-management board powering a Sensirion SHT43 sensor node"></a><br><b>868 MHz rectenna + MPPT powering an IoT sensor node</b><br><sub>An RF signal generator feeds the rectenna; its DC output goes through an e-peas MPPT power-management board into storage capacitors, which power a Sensirion SHT43 humidity/temperature node (GIF at 4× speed).</sub><br><sub><a href="Media/rectenna_sensor_node_demo.mp4">▶ Full video with sound (MP4)</a></sub></td>
+</tr>
+</table>
+
+### RF energy survey (Castelldefels)
+
+Before designing a harvester, the available ambient RF power has to be known. These surveys scan the spectrum from 150 MHz to 6 GHz with a Rohde & Schwarz FSL spectrum analyzer and a wideband antenna mounted on a mobile cart, measuring the field strength (dBµV/m) of the ambient sources (cellular, Wi-Fi, etc.) at several positions indoors and outdoors on the UPC campus in Castelldefels.
+
+<table>
+<tr>
+<td align="center" width="50%"><a href="Media/rf_survey_indoor.mp4"><img src="Media/rf_survey_indoor.gif" width="240" alt="Indoor RF energy survey with a spectrum analyzer and a wideband antenna"></a><br><b>Indoor RF energy survey</b><br><sub><a href="Media/rf_survey_indoor.mp4">▶ Full video with sound (MP4)</a></sub></td>
+<td align="center" width="50%"><a href="Media/rf_survey_outdoor.mp4"><img src="Media/rf_survey_outdoor.gif" width="240" alt="Outdoor RF energy survey with a spectrum analyzer and a wideband antenna"></a><br><b>Outdoor RF energy survey</b><br><sub><a href="Media/rf_survey_outdoor.mp4">▶ Full video with sound (MP4)</a></sub></td>
 </tr>
 </table>
 
@@ -42,7 +55,7 @@ The RF signal enters through the SMA connector and a 50 Ω microstrip feed line.
 
 ```
 RF-Energy-Harvesting-Rectenna/
-└── Media/ (demo video, GIF and labeled prototype photos)
+└── Media/ (demo videos, RF survey videos, GIFs and labeled prototype photos)
 ```
 
 See also: [Wireless-Power-Transfer](https://github.com/fereshtianamir-lab/Wireless-Power-Transfer) – magnetic-resonance WPT coils in HFSS, and [RF-Antenna](https://github.com/fereshtianamir-lab/RF-Antenna) – antenna and transmission-line models in HFSS, CST and FEKO.
