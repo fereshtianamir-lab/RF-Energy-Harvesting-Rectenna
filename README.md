@@ -28,7 +28,7 @@ Before designing a harvester, the available ambient RF power has to be known. Th
 ### Fabricated prototype
 
 <table>
-<tr><td align="center"><a href="Media/rectenna_microstrip_prototype_labeled.jpg"><img src="Media/rectenna_microstrip_prototype_labeled.jpg" width="720" alt="Microstrip rectenna prototype with labeled components"></a><br><b>Rectenna prototype with a microstrip transmission-line matching network</b></td></tr>
+<tr><td align="center"><a href="Media/rectenna_microstrip_prototype_labeled.jpg"><img src="Media/rectenna_microstrip_prototype_labeled.jpg" width="600" alt="Microstrip rectenna prototype with labeled components"></a><br><b>Rectenna prototype with a microstrip transmission-line matching network</b></td></tr>
 </table>
 
 The RF signal enters through the SMA connector and a 50 Ω microstrip feed line. A series capacitor and a short-circuited microstrip line, grounded through a via, form the L-matching network; the line acts as a high-Q shunt inductor that also gives the diode a DC return path. A Schottky diode rectifies the signal (half-wave), and an output capacitor filters the DC delivered to the load. The board is mounted on an aluminium fixture that serves as the ground plane.
